@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+}
+
+header {
+    height: 50vh;
+    @extend.flex-center;
+
+    background: linear-gradient(rgba(0,0,0,0.179), rgba(0,0,0,0.179)),
+    url("https://media.istockphoto.com/id/1706349066/photo/variety-of-breakfast-and-brunch-sweet-dishes-on-wooden-table.jpg?s=612x612&w=is&k=20&c=JrHwhD4v6k6LRzaPWkrRlsqA6sdOrTAJ8M_MmXAQkJY=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    p {
+        margin-top: 20px;
+        max-width: 500px;
+        text-align: center;
+    }
+}
+
+.container {
+    height: 100vh;
+
+    .cards {
+        @extend.flex-center;
+        flex-direction: row;
+
+        .card {
+            border: 0.6px solid rgb(168, 168, 168);
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+            margin: 20px;
+            font-family: sans-serif;
+
+        .card-img {
+            background-image: url("https://media.istockphoto.com/id/1324450155/photo/pancakes-with-berries-and-sweet-sauce-on-black-background-maslenitsa-shrovetide-shrove.jpg?s=612x612&w=0&k=20&c=N0BF9aLmjGSiEFnu75tTHp3mC2Kl64-ig9WFyl7cmK8=");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 200px;
+            margin-bottom: 20px;
+        }
+
+        .img-two {
+            @extend.card-img;
+            background-image: url("https://media.istockphoto.com/id/486921116/photo/crepes-with-strawberries-and-chocolate.jpg?s=612x612&w=0&k=20&c=sC0TEEoD5eGu0kV4Soy4ngCpcL8oXSH-aLzVw1dzJac=");
+        }
+
+        .img-three {
+            @extend.card-img;
+            background-image: url("https://media.istockphoto.com/id/1324450260/photo/russian-cottage-cheese-pancakes-with-berries-and-chocolate-sauce-on-black-background.jpg?s=612x612&w=0&k=20&c=cvK_V-2-2Ss9GOzCA38Ipv4frdqSMPexKE3rJ2RWuwE=");
+        }
+
+        .img-four {
+            @extend.card-img;
+            background-image: url("https://media.istockphoto.com/id/1503418295/photo/there-is-jam-next-to-cheese-pancakes.jpg?s=612x612&w=0&k=20&c=fbsdOstPdulT7ViGxezWBeukoYSyrVWBizgvabXLFsM=");
+        }
+
+        p {
+            margin-bottom: 2rem;
+            max-width: 300px;
+            line-height: 1.4;
+            color: rgb(96, 96, 96);
+        }
+
+        .card-title {
+            margin-bottom: 20px;
+            color: rgb(28, 28, 28);
+        }
+
+        .btn-primary {
+            text-decoration: none;
+            color: #515151;
+            border: 1px solid #515151;
+            padding: 10px 20px;
+        }
+    }
+    }
+}
